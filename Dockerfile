@@ -1,4 +1,4 @@
 FROM openjdk
-COPY target/*.jar .
-RUN java -jar *.jar
+COPY target/*.jar /home/Myapp.jar
+RUN java -jar /home/Myapp.jar
 EXPORT 8080
