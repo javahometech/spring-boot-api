@@ -1,5 +1,5 @@
 
-version: '5.0'
+version: '3.1'
 services:
   spring_boot:
     image: 885644/spring_boot:1.0
