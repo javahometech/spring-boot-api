@@ -3,7 +3,7 @@ version: '5.0'
 services:
   spring_boot:
     image: 885644/spring_boot:1.0
-    container_name:spring_boot 
+    container_name: spring_boot 
     ports:
      - "8080:8080"
     networks:
