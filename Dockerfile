@@ -1,4 +1,6 @@
-FROM openjdk:8
-MAINTAINER JAVA_Home_Real_Tyme
-COPY ./target/.jar spring-boot.jar
-ENTRYPOINT ["java", "-jar" "spring-boot.jar"]
+FROM openjdk:8-jdk-alpine
+LABEL maintainer="spring-boot-api"
+COPY ./*.jar /usr/app/spring_boot.jar
+WORKDIR /usr/app
+ENTRYPOINT ["java","-jar","spring_boot.jar"]
+

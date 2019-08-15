@@ -1,0 +1,20 @@
+
+version: '5.0'
+services:
+  spring_boot:
+    image: 885644/spring_boot:1.0
+    container_name:spring_boot 
+    ports:
+     - "8080:8080"
+    networks:
+      - spring_boot_network3.0
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest 
+    networks:
+      - spring_boot_network3.0
+networks:
+  spring_boot_network3.0:
+    driver: bridge
+
